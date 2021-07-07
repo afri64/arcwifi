@@ -1,0 +1,13 @@
+#!/bin/bash
+clear
+echo wifi dumper
+echo [==masukan nama adapter wifi anda ==]
+read rapd
+
+clear
+
+echo [==masukan nama adapter wifi anda tambahkan mon ==]
+read rapdmon
+sudo airmon-ng start $rapd
+sudo airmon-ng start $rapdmon
+sudo airodump-ng $rapdmon
