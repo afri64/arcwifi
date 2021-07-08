@@ -1,7 +1,7 @@
 #!/bin/bash
 clear
 date
-echo "   \\1.5r menu\\"
+echo "   \\1.6r menu\\"
 read -p "[lanjutkan hacking] [update]
 >>" pil;
 case $pil in
