@@ -14,6 +14,11 @@ clear
   cd 
   rm -r arcwifi
   git clone https://github.com/afri64/arcwifi
+  cd
+  cd arcwifi
+  echo installizing...
+  clear
+  bash wfi
   echo "arcwifi selesai di update"
 ;;
 
