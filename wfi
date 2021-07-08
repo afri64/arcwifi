@@ -11,7 +11,7 @@ update)
   rm -r arcwifi
   git clone https://github.com/afri64/arcwifi
   echo "arcwifi selesai di update"
-
+;;
 
 
 
