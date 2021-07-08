@@ -1,8 +1,9 @@
 #!/bin/bash
 clear
-echo "tools started at :"
+echo " ARC_dev"
+
 date
-echo "   \\1.7r menu\\=============\\"
+echo "   \\1.7i menu\\=====wfi=====\\"
 read -p "[lanjutkan hacking] [update]
 >>" pil;
 case $pil in
@@ -44,7 +45,6 @@ read trgtbssid
 
 clear
 
-echo =[+] klik enter untuk hack wifi $wifitrgt
 echo =[+] silahkan selesaikan pertanyaan di tab lain
 echo =[+] jika sudah klik enter
 read selesai
