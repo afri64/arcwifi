@@ -1,7 +1,8 @@
 #!/bin/bash
 clear
+echo "tools started at :"
 date
-echo "   \\1.6r menu\\"
+echo "   \\1.7r menu\\=============\\"
 read -p "[lanjutkan hacking] [update]
 >>" pil;
 case $pil in
