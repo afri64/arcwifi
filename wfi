@@ -1,13 +1,15 @@
 #!/bin/bash
 clear
 date
-echo "   \\1.4r menu\\"
-read -p "[lanjutkan hacking] [update]" pil;
+echo "   \\1.5r menu\\"
+read -p "[lanjutkan hacking] [update]
+>>" pil;
 case $pil in
 
 
 
 update)
+clear
   echo "[[update]]*"
   cd 
   rm -r arcwifi
