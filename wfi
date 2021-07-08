@@ -15,7 +15,7 @@ update)
 
 
 
-lanjutkan hacking)
+lanjutkan)
 
 mkdir hacked_wifi
 clear
@@ -50,5 +50,7 @@ echo "
 sudo aireplay-ng -0 0 -a $trgtbssid $adapterwifi
 
 ;;
+*)
+ exit
 
 esac
